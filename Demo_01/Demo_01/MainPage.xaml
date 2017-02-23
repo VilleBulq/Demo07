@@ -8,6 +8,35 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0"
+                   Grid.Row="0"
+                   FontSize="30"
+                   Text="Eka rivi eka sarake"
+                   TextWrapping="Wrap"
+                   TextAlignment="Center"/>
+        <TextBlock Grid.Column="1"
+                   Grid.Row="1"
+                   FontSize="30"
+                   Text="Toinen rivi toinen rööri"
+                   />
+        <TextBlock Grid.Column="2"
+                   Grid.Row="2"
+                   Text="Jaa"
+                   FontSize="30"
+                   />
+        <TextBlock Grid.Column="0"
+                   Grid.Row="2"
+                   Text="kolmas rivi"
+                   FontSize="30"
+                   />
     </Grid>
 </Page>
